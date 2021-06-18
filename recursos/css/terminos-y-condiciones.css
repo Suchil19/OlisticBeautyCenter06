@@ -1,0 +1,319 @@
+.container1 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 0px;
+    margin-bottom: -120px;
+    position: relative;
+    }
+
+    @media (max-width: 991px){
+      .container1 {
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1000px;
+        margin-bottom: -100px;
+        position: relative;
+        }
+    }
+
+#slider-lavanderia{
+    background-color: none;
+    z-index: -1;
+  }
+  
+  section{
+    background: none;
+  }
+  
+  /* Slider */
+  .slider {
+    height: 40vh;
+    
+  }
+  
+  .wallpaper {
+    -webkit-animation: slider 1s ease infinite;
+    animation: slider 14s ease infinite;
+    background: linear-gradient(to bottom, #ea899b83 , #fa8ea285), url('../img/sucursal/slider01.jpeg') #fff center / cover no-repeat scroll;
+    
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+    /*border-radius: 0 0 90% 90%/0 0 30% 30%;*/
+  }
+  
+  .wallpaper:nth-child(2) {
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+            background: linear-gradient(to bottom, #ea899b83 , #fa8ea285), url('../img/sucursal/slider02.jpeg') #fff center / cover no-repeat scroll;
+  }
+  
+  .wallpaper:nth-child(3) {
+    background: linear-gradient(to bottom, #ea899b83 , #fa8ea285), url('../img/sucursal/slider03.jpeg') #fff center / cover no-repeat scroll;
+      -webkit-animation-delay: 20s;
+              animation-delay: 20s;
+  }
+  
+  @media (max-width: 991px){
+    .slider {
+      height: 50vh;
+      
+    }
+    
+    .wallpaper {
+ 
+      border-radius: 0 0 250% 250%/0 0 91% 91%;
+    }
+
+  }
+  
+  .ctn-content-slider h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 0px;
+    margin-top: 50px;
+  }
+
+    
+  @media (max-width: 991px){
+    .ctn-content-slider h1 {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 0px;
+        margin-top: 25%;
+      }
+    }
+  
+  /*Los movi al css general al recursos style*/
+
+  /*
+  .btn-slider {
+    background-color: #ec5483;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-align: center;
+    transition: ease-in;
+  }
+  
+  .btn-slider:hover {
+    transition: ease-in .7s;
+    background-color: #c03c66;
+  }
+
+  */
+  
+  .ctn-book-now {
+    background-color: #000000;
+    font: bold 18px sans-serif;
+    padding: 0.5rem 1rem;
+    right: calc(0% - 5px);
+    transform: rotateZ(270deg) translateY(100%);
+    z-index: 1;
+  }
+  
+  
+  @-webkit-keyframes slider {	
+      20% {
+          opacity: 1;
+          visibility: visible;
+    }
+  }
+  
+  @keyframes slider {	
+      20% {
+          opacity: 1;
+          visibility: visible;
+    }
+  }
+  
+
+    
+  /*======== TEXTO E IMAGEN ===========*/
+  
+  
+  .section .row{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .section .row .col-md-6{
+    /*background: #f5f5f5;*/
+    margin-right: -2%;
+    padding: 5%;
+  }
+  /*
+  .section h3{
+    color: #09aca3;
+     border-bottom: solid 3px #2726260d;
+     font-size: 1.2rem;
+     font-weight: 700;
+  }
+  .section p{
+    margin-top: 10%;
+    color: #545b62;
+    font-size: 1.2rem;
+  }
+  */
+  .section img
+  {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /*===== TERMINA TEXTO E IMAGEN =======*/
+
+
+
+
+    
+/* CARDS*/
+
+
+.container-servicios {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+}
+
+
+
+.card {
+  max-width: 320px;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid #0077ff;
+  padding-bottom: 35px;
+  border-radius: 5px;
+  background-color: #525252;
+  color: white;
+  cursor: default;
+  border-radius: 10px;
+  transition: background 1.7s ease, color .4s ease;
+}
+
+.card:hover {
+  transition: background 1.7s ease, color .4s ease;
+  background: #09aca3;
+  color: #fff;
+}
+
+.card:hover .divider {
+  border: 1px solid #0077ff;
+}
+
+.card:hover .btn-default {
+  background: linear-gradient(to bottom, #00b7fa , #0077ff);
+  color: #fff;
+}
+
+.card img {
+  width: 100px;
+  margin: 20px 35%;
+}
+
+.card-text {
+  padding: 0 15px;
+  font-size: 1rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.divider {
+  border: 1px solid #0088ff;
+  margin: 40px 0;
+}
+
+.btn {
+  padding: 12px 17px;
+  text-decoration: none;
+}
+
+.btn-default {
+  color: #fff;
+  background: linear-gradient(to bottom, #00b7fa , #0077ff);
+  border: 0px solid #c2c2c246;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+/*****  TWERMINAN CARDS  ******/
+
+
+/******* CALENDLY *******/
+
+.calendly-inline-widget{
+margin: 1rem;
+border-radius: 10px;
+}
+/*****  TERMINAN CALENDLY ******/
+
+
+/*MAPA*/
+.map-responsive{
+
+    overflow:hidden;
+  
+    padding-bottom:20%;
+  
+    position:relative;
+  
+    height:0;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 90%;
+    border: 3px solid  #d2ab6785;
+    margin-bottom: 90PX;
+  
+  }
+  
+  .map-responsive iframe{
+  
+    left:0;
+  
+    top:0;
+  
+    height:100%;
+  
+    width:100%;
+  
+    position:absolute;
+  
+  }
+  
+  @media (max-width: 700px) {
+    .map-responsive{
+  
+      overflow:hidden;
+    
+      padding-bottom:70%;
+    
+      position:relative;
+    
+      height:0;
+      max-width: 1100px;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-bottom: 90PX;
+    
+    }
+  }
+  
+  /* Termina el mapa */
+
+
+  .btn{
+    color: #fff;
+  }

@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+    height: 120vh;
+    background-color: #f2f2f2;
+    scroll-behavior: smooth; 
+  }
+  
+  
+  .container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
+    }
+  
+    /*Agregue este container para posisionarlo para arriba
+    .container1 {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 700px;
+      margin-top: -91px;
+      position: relative;
+      }
+  
+      @media (max-width: 991px){
+        .container1 {
+          margin: 0 auto;
+          width: 90%;
+          max-width: 1000px;
+          margin-top: -150px;
+          position: relative;
+          }
+      }*/
+  
+        /* Termina Agregue este container para posisionarlo para arriba*/
+  
+  /* Prelaoder */
+  #preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff  url("../../img/inicio/preload/preload.svg") no-repeat center center;
+  }
+  
+  /*============ NAVIGATION ============*/
+  .navbar {
+    padding: 0.7rem 1rem;
+    /*text-transform: uppercase;*/
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.5s ease 0s;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 0px 7px -2px #000;
+    z-index: 99;
+  }
+  
+  /*span{
+    color: #1da1f2;
+  }*/
+  
+  .navbar-brand img {
+    height: 2rem;
+  }
+  
+  .navbar-brand {
+    color: #d2ab67;
+    /*font-style: italic;*/
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .navbar-brand:hover {
+    color: #e2b568;
+    text-decoration: none;
+  }
+  
+  i {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  
+  .navbar .fa-bars{
+    font-size: 1.6rem;
+    color: #d2ab67;
+  }
+  
+  .gray {
+    color: gray;
+  }
+  
+  button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focusring-color;
+  }
+  
+  .navbar-nav li {
+    padding-right: 0.5rem;
+    display: block;
+    margin: 0 auto;
+  }
+  /* Aqui cambio la direcccion del navbar en responsive
+  @media (max-width: 991px){
+  .navbar-nav li {
+    padding-right: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-left: 1%;
+  }
+  }
+  /*****/
+  
+  
+  .navbar-nav .nav-link {
+    color: #d2ab67;
+    padding-top: 0.7rem;
+    transition: ease-in .3s;
+    font-size: 1.2rem;
+    /*border-bottom: solid 1px rgba(255, 255, 255, 0.281);*/
+  }
+  
+  /* Border de la lista */
+  @media (max-width: 991px){
+    .navbar-nav .nav-link {
+    border-bottom: solid 1px #06060613;
+   
+  }
+  }
+  
+  .navbar-nav .nav-link.active,.navbar-nav .nav-link:hover{
+    color: #000;
+    transition: ease-in .3s;
+    transform: scale(1.07);
+  }
+  
+  /* NavBar despues del scroll*/
+  .navbar.solid {
+    background: #fff !important;
+    transition: background-color .5s ease 0s;
+  }
+  
+  /*============ LANDING PAGE IMAGE ============*/
+  
+
+  
+  
+  
+  /* Brand */
+  .ctn-brand {
+    padding: 2rem;
+  }
+  
+  .box-brand {
+    box-shadow: 0 0 0 4px #e8e8e8;
+    color: #e9e9e9;
+  }
+  
+  .box-brand h2 {
+    font: 700 25px 'Roboto', sans-serif;
+  }
+  
+  .box-brand p {
+    font-size: .9rem;
+  }
+  
+  /* Los botones de la seccion hero */
+  .btn-slider {
+    background-color: #ea899a;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-align: center;
+    transition: ease-in .5s;
+  }
+  
+  .btn-slider:hover {
+    transition: ease-in .5s;
+    background-color: #e2b568;
+  }
+  
+  /* Tambien movi estos aqui*/
+
+  .section h3{
+    color: #d2ab67;
+     border-bottom: solid 3px #2726260d;
+     font-size: 1.2rem;
+     font-weight: 700;
+  }
+  
+  .section p{
+    margin-top: 10%;
+    color: #545b62;
+    font-size: 1rem;
+  }
+
+  
+  /****** SKILLS *******/
+  /* 4- skills section */
+  
+  .grid2 {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 15px;
+      padding: 0;
+    } 
+  
+    @media (max-width: 991px){
+      .grid2 {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px;
+        padding: 0;
+        }
+      }
+  
+  #skills {
+      margin-top: 0%;
+      padding: 0px 0px;
+      background-color: none;
+      overflow-x: hidden;
+    background-color: none;
+    
+    }
+  
+    #skills li {
+      list-style-type: none;
+    box-shadow: 0px 0px 7px -2px #000;
+    transition: ease-in .3s;
+    cursor: pointer;
+    }
+  
+    #skills li:hover {
+      transform: scale(1.02);
+      transition: ease-in .3s;
+      list-style-type: none;
+      box-shadow: 0px 0px 7px -2px #000;
+      }
+  
+    #skills h4 {
+      text-align: center;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+  
+    #skills h3 {
+      text-align: center;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  
+    #skills ul {
+      /* Agregue el 10 por que cuando le pongo el hover se cortaba de los lados*/
+      margin: 10px 10px;
+    }
+    #skills li {
+      padding: 10px;
+      background: linear-gradient(to bottom, #01b6d6 , #0490a8);
+      /*background-image: url("../recursos/img/landing-page/backgroundUX.png");
+      background-repeat:no-repeat;
+    background-position: center;*/
+      grid-column: span 4;
+      text-align: center;
+    border-radius: 10px;
+    }
+    #skills img {
+      height: 80px;
+      margin: 10px auto;
+    }
+  
+    @media (max-width: 700px) {
+      #skills {
+          margin-top: 15%;
+          padding: 0px 0px;
+          background-color: none;
+          overflow-x: hidden;
+        }
+  }
+  /****** TERMINA SKILLS ****/
+  
+
+  
+  
+  
+  
+  /*===== CAROUSELL ======*/
+ 
+
+  /*==== TERMINA CAROUSELL ======*/
+  
+  
+/* ====== FOOTER =======*/
+.footer img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 7px;
+}
+  
+
+/*section {
+          padding: 60px 0;
+          min-height: 100vh;
+      }
+      */
+.footer {
+  padding: 5% 5% 5% 5%;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+footer span{
+  color: #0177b5;
+}
+
+
+.footer .widget1 p {
+  font-size: 1.2rem;
+  color: #717171;
+  margin-top: 26px;
+}
+
+.footer .socialLinks {
+  margin-top: 28px;
+}
+
+.socialLinks ul li {
+  display: inline-block;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+.socialLinks ul li a i {
+  display: block;
+  margin: 0 2px;
+  width: 40px;
+  height: 40px;
+  background: #0000001c;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  line-height: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.socialLinks li::marker{
+  text-decoration: none;
+}
+
+.socialLinks ul li a .fa-facebook-f {
+  color: #4267b2;
+}
+
+.socialLinks ul li a .fa-instagram {
+  color: #1da1f2;
+}
+
+.socialLinks ul li a .fa-tiktok {
+  color: #414141;
+}
+
+.socialLinks ul li a .fa-linkedin-in {
+  color: #0177b5;
+}
+
+
+.socialLinks ul li a:hover i {
+  color: #fff;
+}
+
+.socialLinks ul li a:hover .fa-facebook-f {
+  background: #4267b2;
+}
+
+.socialLinks ul li a:hover .fa-instagram {
+  background: #d80aaf;
+}
+
+.socialLinks ul li a:hover .fa-tiktok {
+  background: #060606;
+}
+
+.socialLinks ul li a:hover .fa-linkedin-in {
+  background: #0177b5;
+  text-decoration: none;
+}
+footer .logo {
+  max-width: 200px;
+}
+
+.footer h5 {
+  font-weight: 500;
+  margin-bottom: 28px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #d2ab67;
+  font-size: 21px
+}
+
+.footer .widget2 .media img {
+  margin-right: 20px;
+  max-width: 100px;
+}
+.footer .widget2 .media p {
+  font-size: 16px;
+  color: #000;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.footer .widget2 .media span {
+  font-size: 12px;
+  color: #d2ab67;
+  text-transform: uppercase;
+  margin-top: 15px;
+  display: block;
+  font-weight: 900;
+}
+
+.footer .widget2 .media {
+  margin-bottom: 20px;
+}
+
+.footer .widget3 ul li a,
+.footer .widget4 ul li a {
+  font-size: 16px;
+  color: #d2ab67;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  /*display: block;*/
+  text-decoration: none;
+}
+
+
+.footer .widget3 ul li a:hover,
+.footer .widget4 ul li a:hover,
+.footer .widget2 a:hover p {
+  color: #ea899a;
+  text-decoration: none;
+}
+
+.footer .widget3 h5 {
+  margin-bottom: 22px;
+  font-weight: 600;
+  color: #313131;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.footer .widget4 h5 {
+  margin-bottom: 22px;
+  font-weight: 600;
+  color: #313131;
+  font-size: 21px;
+}
+
+.copyRightArea {
+  margin-top: 83px;
+  border-top: 2px solid #0000003d;
+  padding: 25px 0px 28px;
+}
+
+.copyRightArea p {
+  color: #313131;
+}
+/* ===== TERMINA FOOTER ===========*/
+
+
+
+/*** BOTONES DE WHATS Y MESSENEGR ***/
+.float-whatsapp,
+.float-messenger{
+  display: block;
+  position: fixed;
+  width: 60px;
+  height: auto;
+  border-radius: 100%;
+  border: 2px solid white;
+  transition: 200ms all;
+  padding: 12px;
+  left: 2%;
+  z-index: 2;
+}
+.float-whatsapp{
+  bottom: 24px;
+  background: #25d366; 
+}
+a.float-messenger {
+  bottom: 2%;
+  background: #FFF;
+}
+a.float-messenger:hover,
+a.float-whatsapp:hover{
+  transform: rotate(25deg) scale(1.2);
+}
+a.float-whatsapp path{
+  fill: white;
+}
+a.float-messenger path{
+  fill: #0084ff;
+}
+
+/*** TERMINAN BOTONES DE WHATS Y MESSENGER ***/
+
+
+/*===== BOTON FLOTANTE ======*/
+.container-button {
+	align-items: center;
+	background-color: none;
+	display: flex;
+	height: 5%;
+	justify-content: center;
+	max-width: 100%;
+	min-height: 1vh;
+	position: fixed;
+  right: 3%;
+  top: 93%;
+  z-index: 99;
+}
+
+@media (max-width: 991px){
+  .container-button {
+    align-items: center;
+    background-color: none;
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 1vh;
+    position: fixed;
+    right: 3%;
+    top: 91%;
+    z-index: 99;
+  }
+}
+
+
+
+button {
+	background-color: #ea899a;
+	border: none;
+	transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+	button:hover {
+		background-color: darken(#e04e7c, 5%);
+	}
+
+	button:focus {
+		outline: none;
+	}
+
+
+.add-to-cart {
+	animation: shadowFloat 1.7s linear alternate infinite;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 1rem;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px darken(#ea899a, 10%);
+}
+
+
+@keyframes shadowFloat {
+	0% {
+		box-shadow: 0 20px 40px #fff;
+		transform: scale(1);
+	}
+	100% {
+		box-shadow: 0 10px 10px darken(#fff, 5%);
+		transform: scale(1.07);
+	}
+}
+
+/*===== TERMINA BOTON FLOTANTE ======*/

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <!--PWA>
+  <link rel="manifest" href="./manifest.json"--> 
+  <title>Promociones | Oilistic Beauty Center</title>
+  <link rel="shortcut icon" type="image/png" href="../../img/OlisticLogo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <!--LO AGREGUE PARA LOS ICONOS-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+  <div id="preloader"></div>
+
+
+<header id="header">
+    <div id="home">
+    <!-- Start Navigation -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a  id="header-img" class="navbar-brand" href="#"><img src="../../img/OlisticLogo.png">Oilistic Beauty Center</a>
+        <button id="hamburguer" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link"><!--i class="fas fa-home"></i-->&nbsp;Inicio</a>
+            </li>
+            <li>
+              <a href="../contacto.html" class="nav-link"><!--i class="fas fa-phone"></i-->&nbsp;Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a href="../citas.html" class="nav-link"><!--i class="fas fa-map-marker-alt"></i-->&nbsp;Citas</a>
+            </li>
+            <li class="nav-item">
+              <a href="../servicios.html" class="nav-link"><!--i class="fas fa-tshirt"></i-->&nbsp;Servicios</a>
+            </li>
+            <!--li class="nav-item">
+              <a href="#pricing" class="nav-link">Tintorería</a>
+            </li-->
+
+            <!--li class="nav-item">
+              <a href="#pricing" class="nav-link">Contacto</a>
+            </li-->
+            
+            <li style="display: none;" class="logged-out menu-item">
+              <a class="nav-link registration" href="#" data-toggle="modal" data-target="#signinModal"><!--i class="fas fa-user"></i-->&nbsp;Ingresa | Regístrate</a>
+          </li>
+          <!--li style="display: none;" class="logged-out"><a href="#" ><i class="fas fa-clipboard"></i>&nbsp;Link para cuando no esta registrado</a></li-->
+          <!--li style="display: none;" class="logged-out"><a href="#" data-toggle="modal" data-target="#signupModal"><i class="fas fa-clipboard"></i>&nbsp;Registrate</a></li-->
+              <li style="display: none;" class="nav-item menu-item logged-in"><a class="registration nav-link" href="index.html"><!--i class="fas fa-bell"></i-->&nbsp;Promociones</a></li>
+              <li style="display: none;" class="nav-item boton-salir logged-in"><a class="nav-link" href="#" id="logout" onclick="noticias()"><!--i class="fas fa-sign-out-alt"></i-->&nbsp;Salir</a></li>
+
+              <!--li style="display: none;" class="nav-item menu-item logged-in"><a href="#" ><i class="fas fa-clipboard"></i>&nbsp;Link para cuando ya esta registrado</a></li-->
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+<!-- Slider -->
+<section id="slider-lavanderia">
+	<div class="align-items-center d-flex justify-content-center position-relative text-center w-100 slider">
+		<div class="h-100 position-absolute w-100 wallpaper"></div>
+		<div class="h-100 position-absolute w-100 wallpaper"></div>
+		<div class="h-100 position-absolute w-100 wallpaper"></div>
+		<div class="position-relative ctn-content-slider">
+			<h1 class="mb-5">
+				<span class="bold">
+					Promociones
+				</span>
+				CDMX
+			</h1>
+
+		<button type="button" class="btn text-white btn-slider">
+				Haz tus pedidos	
+		</button>
+		</div>
+		<!--button type="button" data-toggle="modal" data-target="#formModal" class="btn position-absolute text-white text-uppercase ctn-book-now">
+			Book Now
+		</button-->
+	</div>
+
+</section>
+
+<!--SKILLS-->
+<!--div class="container1">
+  <section id="skills">
+  
+    <ul class="grid2">
+      <li>
+      <img src="./img/inicio/grid/lavanderia.png" alt="comet">
+      <h4>Lavandería</h4>
+      </li>
+      <li>
+      <img src="./img/inicio/grid/planchaduria.png" alt="comet">
+      <h4>Planchaduría</h4>
+      </li>
+      <li>
+      <img src="./img/inicio/grid/sastreria.png" alt="comet">
+      <h4>Sastrería</h4>
+      </li>
+      <li>
+      <img src="./img/inicio/grid/tintoreria.png" alt="comet">
+      <h4>Tintorería</h4>
+      </li>
+    </ul>
+    
+    </section>
+  </div-->
+  <!--TERMINAN SKILLS-->
+
+  
+<!-- REGISTRO FIREBASE -->
+  <!--MAIN CONTENT-->
+  <div class="container p-5" style="z-index:1">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <ul class="list-group posts">
+                
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container section">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>
+                Nuestros servicios
+            </h3>
+            <p>
+                Through its program, TopVolunteer™, 
+                Members of the GetLance network are encouraged to offer
+                their whether to solve a timely problem or to contribute
+                on an ongoing basis.
+            </p>
+
+            <button type="button" class="btn text-white btn-slider">
+              Haz tus pedidos
+            </button>
+
+        </div>
+        <div class="col-md-6">
+            <img src="../img/promociones/inicio02.jpeg" alt=""/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="../img/promociones/inicio03.jpeg" alt=""/>
+        </div>
+        <div class="col-md-6">
+            <h3>
+                Nuestros servicios
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Illum explicabo dolore 
+              dolorem doloribus. Nihil mollitia impedit 
+              expedita praesentium excepturi tempora.
+            </p>
+
+            <button type="button" class="btn text-white btn-slider">
+              Haz tus pedidos
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Brand -->
+<section>
+	<div class="container ctn-brand text-center">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="box-brand">
+					<h2 class="font-italic m-0 pt-2 text-uppercase">
+						Brand
+					</h2>
+
+					<p class="pb-2">
+						tagline here
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="box-brand">
+					<h2 class="font-italic m-0 pt-2 text-uppercase">
+						Brand
+					</h2>
+
+					<p class="pb-2">
+						tagline here
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="box-brand">
+					<h2 class="font-italic m-0 pt-2 text-uppercase">
+						Brand
+					</h2>
+
+					
+					<p class="pb-2">
+						tagline here
+					</p>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="box-brand">
+					<h2 class="font-italic m-0 pt-2 text-uppercase">
+						Brand
+					</h2>
+
+					
+					<p class="pb-2">
+						tagline here
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+        
+
+
+<!--CAROUSEL -->
+
+
+
+
+<!--TERMINA CAROUSELL-->
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="widget1">
+                    <div class="logo">
+                        <img src="../../img/OlisticLogo.png" class="img-fluid" alt="">
+                    </div>
+                    <p>
+                       Estamos para brindarte el mejor servicio.
+                    </p>
+                    <div class="socialLinks">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/OilisticBeautyCenter">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                            <!--li>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="widget2">
+                    <h5>
+                        Últimas noticias
+                    </h5>
+                    <div class="media">
+                        <img class="img-fluid" src="../../img/inicio/grid/06.jpeg" alt="">
+                        <div class="media-body d-flex align-self-center">
+                            <div class="content">
+                                <a href="#">
+                                    <p>
+                                        Ya puedes vistarnos
+                                    </p>
+                                </a>
+                                <span>
+                                    Junio, 2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="media">
+                        <img class="img-fluid" src="../../img/inicio/grid/05.jpeg" alt="">
+                        <div class="media-body d-flex align-self-center">
+                            <div class="content">
+                                <a href="#">
+                                    <p>
+                                         Ya puedes vistarnos
+                                    </p>
+                                </a>
+                                <span>
+                                    Junio, 2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+  
+                    <!--div class="media">
+                      <img class="img-fluid" src="./img/inicio/lavanderia02.jpeg"  alt="">
+                      <div class="media-body d-flex align-self-center">
+                          <div class="content">
+                              <a href="#">
+                                  <p>
+                                          Rapturous am eagerness it as resolving household
+                                  </p>
+                              </a>
+                              <span>
+                                  Aug 17, 2019
+                              </span>
+                          </div>
+                      </div>
+                    </div-->
+  
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+                <div class="widget3">
+                    <h5>
+                        Servicios
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                               Contacto
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Citas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Servicios
+                            </a>
+                        </li>
+                        <!--li>
+                            <a href="./recursos/tintoreria.html">
+                              Servicios
+                            </a>
+                        </li-->
+                        <!--li>
+                            <a href="#">
+                                skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                career
+                            </a>
+                        </li-->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+                <div class="widget4">
+                    <h5>
+                        Beauty Center
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Acerca de
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Política de Privacidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Sucursal
+                            </a>
+                        </li>
+                        <!--li>
+                            <a href="#">
+                                Política de privacidad
+                            </a>
+                        </li-->
+                        <!--li>
+                            <a href="#">
+                                redpen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                codepen
+                            </a>
+                        </li-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyRightArea">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; Proyecto hecho por <a href="#link"><span>Vita Solutions MX</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+<!--TERMINA FOOTER-->
+              
+  <!--BOOTSTRAP SCRIPTS-->
+  
+      <!-- Modal  SignUP-->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">Registro:
+              Contraseña con al menos 6 caracteres
+            </h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+           </div>
+           <div class="modal-body">
+            <form id="signup-form">
+              <div class="form-group">
+                 <input type="text" id="signup-email" class="form-control"
+                 placeholder="E-mail" required>
+              </div>
+              <div class="form-group">
+                 <input type="password" id="signup-password" class="form-control"
+                 placeholder="Contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-primary">SignUp</button>
+            </form>
+           </div>
+         </div>
+        </div>
+      </div>
+                 
+                 
+                 
+                  <!-- Modal  SignIn-->
+                  <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Ingresa con tu correo de Gmail a nuestra plataforma y mantente informado sobre
+                          promociones y avisos importantes
+                        </h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                       </div>
+                       <div class="modal-body">
+                          
+                        <form id="login-form">
+                           
+                          <!--div class="form-group">
+                             <input type="text" id="login-email" class="form-control"
+                             placeholder="E-mail" required>
+                          </div>
+                          <div class="form-group">
+                             <input type="password" id="login-password" class="form-control"
+                             placeholder="Contraseña" required>
+                          </div>
+                          
+                          <button type="submit" class="btn btn-info btn-block">Ingresa</button-->
+                          
+                          <button type="button" class="btn btn-success btn-block black-background white" id="googleLogin"><i class="fab fa-google" aria-hidden="true"></i>&nbsp;Ingresa o Regístrate con Gmail</button>
+                          <!--button type="submit" class="btn btn-primary btn-block" id="facebookLogin"><i class="fab fa-facebook"></i>&nbsp;Ingresa o Regístrate con Facebook</button-->
+                        </form>
+                       </div>
+                     </div>
+                    </div>
+                  </div>
+
+    
+   
+                <!--FIREBASE SCRIPTS-->
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+            
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+          <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+           <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+                   
+                     <script>
+                        // Your web app's Firebase configuration
+                        var firebaseConfig = {
+         apiKey: "AIzaSyDte4-8Gg3VRk-zAXlEqqVKceWeu1ouuAE",
+         authDomain: "oilistic-beauty-center.firebaseapp.com",
+         projectId: "oilistic-beauty-center",
+         storageBucket: "oilistic-beauty-center.appspot.com",
+         messagingSenderId: "650969388514",
+         appId: "1:650969388514:web:176f36b9cec8ce5ab595bb",
+         measurementId: "G-1E72951BM8"
+       };
+                 
+                       // Initialize Firebase
+                       firebase.initializeApp(firebaseConfig);
+                       const auth = firebase.auth();
+                       // FireStore base de datos
+                       const fs = firebase.firestore();
+                     </script>
+                     <!--TERMINA FIREBASE-->
+
+                     
+<!-- partial -->
+
+<!-- PWA >
+<script src="./script.js"></script-->
+
+<!--Registro-->
+<script src="./registro.js"></script>
+<script src="js/script.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+<!--script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script-->
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+
+
+
+
+</body>
+</html>
